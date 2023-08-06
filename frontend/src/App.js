@@ -1,12 +1,32 @@
 
+import { useEffect } from 'react';
 import './App.css';
+import Header from './component/layout/Header/Header.js'
+import Footer from './component/layout/Footer/Footer'
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import webFont from 'webfontloader'
+import Home from "./component/Home/Home.js"
+
 
 function App() {
+
+  useEffect(()=>{
+    webFont.load({
+      google:{
+        families:["Roboto", "Droid Sans", "Chilanka"]
+      }
+    })
+  }, []);
+
   return (
-    <div className="App">
-     <h1>Hello</h1>
-    </div>
-  );
+    <Router>
+      <Header/> 
+      <Routes>
+      <Route exact path="/" element={<Home/>}/>
+      </Routes>
+       <Footer/>
+    </Router>
+  )
 }
 
 export default App;
