@@ -10,6 +10,13 @@ import Product from "./Product.js"
 //import Loader from "../layout/Loader/Loader";
 // import { useAlert } from "react-alert";
 
+const product = {
+  name:"Tshirt",
+  images:[{url:"https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_640.png"}],
+  price:"$40",
+  _id:"ritik"
+};
+
 const Home = () => {
 //   const alert = useAlert();
 //   const dispatch = useDispatch();
@@ -24,13 +31,7 @@ const Home = () => {
 //   }, [dispatch, error, alert]);
 
   return (
-    // <Fragment>
-    //   {loading ? (
-    //     <Loader />
-    //   ) : (
         <Fragment>
-          {/* <MetaData title="ECOMMERCE" /> */}
-
           <div className="banner">
             <p>Welcome to Ecommerce</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
@@ -44,15 +45,18 @@ const Home = () => {
 
           <h2 className="homeHeading">Featured Products</h2>
 
-          {/* <div className="container" id="container">
-            {products &&
-              products.map((product) => (
-                <ProductCard key={product._id} product={product} />
-              ))}
+           <div className="container" id="container">
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
+                <Product product={product} />
           </div>
         </Fragment>
-      )} */}
-    </Fragment>
+   
   );
 };
 

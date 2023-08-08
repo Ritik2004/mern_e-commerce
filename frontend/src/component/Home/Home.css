@@ -60,7 +60,7 @@
     margin: 5vmax auto;
     color: rgb(0, 0, 0, 0.7);
   }
-/*  
+  
   .container {
     display: flex;
     margin: 2vmax auto;
@@ -69,7 +69,6 @@
     justify-content: center;
     max-width: 100%;
   }
-  
   .productCard {
     width: 14vmax;
     display: flex;
@@ -80,8 +79,7 @@
     transition: all 0.5s;
     padding-bottom: 0.5vmax;
   }
-  
-  .productCard > img {
+    .productCard > img {
     width: 14vmax;
   }
   
@@ -91,7 +89,8 @@
     justify-content: flex-start;
     align-items: center;
   }
-  
+ 
+
   .productCardSpan {
     margin: 0.5vmax;
     font: 300 0.7vmax "Roboto";
@@ -135,4 +134,4 @@
       margin: 0 0.5vmax;
       font: 300 1vmax "Roboto";
     }
-  } */
+  } 
