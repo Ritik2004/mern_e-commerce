@@ -11,7 +11,7 @@ router.get("/products", getAllProducts);
 router.post("/product/new", isAuthenticatedUser, authorizeRoles("admin"), createProduct)
 router.put("/product/:id", isAuthenticatedUser, authorizeRoles("admin"),updateProduct)
 router.delete("/product/:id",isAuthenticatedUser, authorizeRoles("admin"),deleteProduct)
-router.get("/product/:id",isAuthenticatedUser,getProductDetail)
+router.get("/product/:id", getProductDetail) //isAuthenticatedUser, i am removing this just for frontend
 
 router.put("/review",isAuthenticatedUser, createProductReview)
 
